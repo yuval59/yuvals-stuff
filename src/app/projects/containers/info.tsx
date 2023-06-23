@@ -15,7 +15,7 @@ export const ProjectInfoContainer = (props: ProjectInfoContainerProps) => {
         <div className="rounded-xl p-2 ml-8 justify-end align-top">
           <div className="relative w-16 h-16">
             <Link href={project.url}>
-              <Image src="/github-mark-white.svg" alt="aaa" fill={true} />
+              <Image src="/github-mark-white.svg" alt="aaa" fill />
             </Link>
           </div>
         </div>

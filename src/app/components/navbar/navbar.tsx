@@ -23,7 +23,7 @@ export const Navbar = () => {
                 <Image
                   src="/github-mark-white.svg"
                   alt="The GitHub logo"
-                  fill={true}
+                  fill
                 ></Image>
               </div>
             </Link>
@@ -35,7 +35,7 @@ export const Navbar = () => {
                 <Image
                   src="/LI-In-Bug.png"
                   alt="The LinkedIn logo"
-                  fill={true}
+                  fill
                 ></Image>
               </div>
             </Link>
