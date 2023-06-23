@@ -12,8 +12,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@t3-oss/env-nextjs": "^0.4.1",
-    "@total-typescript/ts-reset": "^0.4.2",
     "autoprefixer": "10.4.14",
     "next": "13.4.6",
     "postcss": "8.4.24",
@@ -23,6 +21,7 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@total-typescript/ts-reset": "^0.4.2",
     "@types/node": "20.3.1",
     "@types/react": "18.2.13",
     "@types/react-dom": "18.2.6",

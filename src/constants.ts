@@ -1,9 +1,9 @@
-import { z } from 'zod'
-import { env } from './env.mjs'
-
 //#region GitHub constants
+const GITHUB_API_BASE = 'https://api.github.com' as const
 export const owner = 'yuval59' as const
+//#endregion
 
+//#region Projects
 export const projectData = [
   {
     name: 'react-vacations',
@@ -14,18 +14,21 @@ export const projectData = [
     host: 'b',
   },
 ] as const
-
-export const ReposValidation = z.array(
-  z.object({
-    id: z.number(),
-    url: z.string().url(),
-    name: z.string(),
-  })
-)
+export const projectNames = projectData.map((project) => project.name)
+export const projectHosts = projectData.map((project) => project.host)
 //#endregion
 
-const GITHUB_BASE = 'https://api.github.com' as const
-
 export const FETCH_ROUTES = {
-  GET_REPOS: `${GITHUB_BASE}/users/${owner}/repos`,
+  GET_REPOS: `${GITHUB_API_BASE}/users/${owner}/repos`,
+} as const
+
+export const ROUTES = {
+  HOME: '/',
+  PROJECTS: '/projects',
+  ABOUT: '/about',
+} as const
+
+export const LINKS = {
+  LINKEDIN: 'https://www.linkedin.com/in/yuvalmaron',
+  GITHUB: 'https://github.com/yuval59',
 } as const

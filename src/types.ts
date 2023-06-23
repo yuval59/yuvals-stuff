@@ -1,15 +1,15 @@
-import { z } from 'zod'
-import { projectData, ReposValidation } from './constants'
+import { projectData } from './constants'
 
-//#region GitHub types
-export type RepositoryData = (typeof projectData)[number]
-export type RepositoryNames = RepositoryData['name']
-export type RepositoryHosts = RepositoryData['host']
+//#region Project types
+export type ProjectData = (typeof projectData)[number]
+export type ProjectNames = ProjectData['name']
+export type ProjectHosts = ProjectData['host']
 //#endregion
 
-//#region Util types
-export type IncludeProjectName = { name: RepositoryNames }
-export type IncludeProjectHost = { host: RepositoryHosts }
-export type IncludeProjectId = { id: number }
-export type IncludeProjectUrl = { url: string }
-//#endregion
+export type Project = {
+  name: ProjectNames
+  host: ProjectHosts
+  id: number
+  url: string
+  description: string | null
+}
