@@ -1,6 +1,6 @@
 import '@total-typescript/ts-reset'
 
-import { FETCH_ROUTES, projectData } from '@/constants'
+import { FETCH_ROUTES, ROUTES, projectData } from '@/constants'
 import { z } from 'zod'
 import { Navbar } from '../components'
 import { ProjectsContainer } from './containers'
@@ -52,7 +52,7 @@ const ProjectsPage = async () => {
 
   return (
     <div className="container-flex bg-blue-950 h-full min-h-screen overflow-hidden">
-      <Navbar />
+      <Navbar page={ROUTES.PROJECTS} />
 
       <ProjectsContainer projects={projects} />
     </div>

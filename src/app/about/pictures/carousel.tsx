@@ -18,15 +18,13 @@ const PictureCarousel = () => {
   return (
     <div className="relative w-full">
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-        {
-          <Image
-            key={pictures[current].src}
-            src={pictures[current].src}
-            alt={pictures[current].alt}
-            style={{ objectFit: 'contain' }}
-            fill
-          />
-        }
+        <Image
+          key={pictures[current].src}
+          src={pictures[current].src}
+          alt={pictures[current].alt}
+          style={{ objectFit: 'contain' }}
+          fill
+        />
       </div>
 
       <button

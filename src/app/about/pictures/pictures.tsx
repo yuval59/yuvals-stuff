@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 const pictures = [
   {
     src: '/me/IMG_20191222_163239.jpg',
