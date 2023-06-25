@@ -13,8 +13,12 @@ const PictureCarousel = () => {
     setCurrent(current == 0 ? pictures.length - 1 : current - 1)
 
   useEffect(() => {
-    setInterval(increment, 5000)
-  }, [increment])
+    const interval = setInterval(() => {
+      setCurrent((current + 1) % pictures.length)
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [current])
 
   return (
     <div className="relative w-full">
