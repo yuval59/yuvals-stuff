@@ -1,6 +1,7 @@
 //#region GitHub constants
 const GITHUB_API_BASE = 'https://api.github.com' as const
 export const owner = 'yuval59' as const
+export const thisRepo = 'https://github.com/yuval59/project-showcase' as const
 //#endregion
 
 //#region Projects
@@ -10,7 +11,7 @@ export const projectData = [
     host: 'https://react-vacations.vercel.app',
   },
   {
-    name: 'ts-brainf-k',
+    name: 'project-showcase',
     host: 'b',
   },
 ] as const
