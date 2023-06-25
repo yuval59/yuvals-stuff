@@ -29,7 +29,7 @@ const PictureCarousel = () => {
           alt={pictures[current].alt}
           style={{ objectFit: 'contain' }}
           fill
-          loading="eager"
+          priority
           quality="100"
         />
       </div>
