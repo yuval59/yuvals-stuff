@@ -12,7 +12,7 @@ export const projectData = [
   },
   {
     name: 'project-showcase',
-    host: 'b',
+    host: 'https://www.yuvals-stuff.com',
   },
 ] as const
 export const projectNames = projectData.map((project) => project.name)

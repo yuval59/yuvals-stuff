@@ -1,19 +1,24 @@
 'use client'
 
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import pictures from './pictures'
 
 const PictureCarousel = () => {
   const [current, setCurrent] = useState(0)
 
-  const increment = () => {
-    console.log(current)
-    setCurrent((current + 1) % pictures.length)
-  }
+  const increment = () => setCurrent((current + 1) % pictures.length)
 
   const decrement = () =>
     setCurrent(current == 0 ? pictures.length - 1 : current - 1)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((current + 1) % pictures.length)
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [current])
 
   return (
     <div className="relative w-full">
@@ -24,6 +29,8 @@ const PictureCarousel = () => {
           alt={pictures[current].alt}
           style={{ objectFit: 'contain' }}
           fill
+          priority
+          quality="100"
         />
       </div>
 
