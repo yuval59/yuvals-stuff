@@ -3,11 +3,13 @@ import '@total-typescript/ts-reset'
 import { Navbar } from './components'
 
 const header = (
-  <p className="text-center text-xl font-semibold">So, what is this website?</p>
+  <p className="text-center text-xl font-semibold text-white">
+    So, what is this website?
+  </p>
 )
 
 const content = (
-  <p className="row-span-3 p-8 m-8 text-center">
+  <p className="row-span-3 p-8 m-8 text-center text-white">
     A place to link my socials. <br />
     A place to showcase my projects (The ones with a frontend, anyways). <br />
     A justification for me buying this domain. <br />

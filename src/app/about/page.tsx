@@ -2,10 +2,12 @@ import { ROUTES } from '@/constants'
 import { Navbar } from '../components'
 import { PictureCarousel } from './pictures'
 
-const header = <p className="text-center text-xl font-semibold">About me</p>
+const header = (
+  <p className="text-center text-xl font-semibold text-white">About me</p>
+)
 
 const content = (
-  <p className="row-span-3 text-lg">
+  <p className="row-span-3 text-lg text-white">
     My name is Yuval Maron.
     <br />
     I am an enthusiastic Fullstack/Backend developer, experienced with many
