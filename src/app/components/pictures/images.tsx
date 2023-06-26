@@ -9,6 +9,7 @@ const images = [
     fill
     priority
   />,
+
   <Image
     key={0}
     src="/me/IMG_20210514_174845.jpg"
@@ -17,14 +18,16 @@ const images = [
     fill
     priority
   />,
+
   <Image
     key={0}
     src="/me/IMG_20210805_070640.jpg"
-    alt="A selfie of yuval with his dog in a bus stop"
+    alt="A selfie of yuval with his dog at a bus stop"
     style={{ objectFit: 'contain' }}
     fill
     priority
   />,
+
   <Image
     key={0}
     src="/me/IMG_20221102_154422.jpg"
@@ -33,6 +36,7 @@ const images = [
     fill
     priority
   />,
+
   <Image
     key={0}
     src="/me/IMG_20230131_164314.jpg"
@@ -41,6 +45,7 @@ const images = [
     fill
     priority
   />,
+
   <Image
     key={0}
     src="/me/IMG_20230215_210519_545.JPG"
@@ -49,6 +54,7 @@ const images = [
     fill
     priority
   />,
+
   <Image
     key={0}
     src="/me/IMG_20230220_111732.jpg"
@@ -57,6 +63,7 @@ const images = [
     fill
     priority
   />,
+
   <Image
     key={0}
     src="/me/IMG_20230410_121531.jpg"
