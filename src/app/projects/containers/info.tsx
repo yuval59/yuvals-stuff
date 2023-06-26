@@ -1,4 +1,3 @@
-import { GitHub, OpenWhite } from '@/app'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ProjectInfoContainerProps } from './types'
@@ -20,7 +19,7 @@ export const ProjectInfoContainer = (props: ProjectInfoContainerProps) => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Image src={GitHub} alt="The GitHub logo" fill />
+              <Image src="/github-mark-white.svg" alt="The GitHub logo" fill />
             </Link>
           </div>
         </div>
@@ -34,7 +33,7 @@ export const ProjectInfoContainer = (props: ProjectInfoContainerProps) => {
         <div className="rounded-xl p-2 ml-8 justify-end align-top">
           <div className="relative w-16 h-16">
             <Link href={project.host} rel="noopener noreferrer" target="_blank">
-              <Image src={OpenWhite} alt="Open in new window" fill />
+              <Image src="/open_white.png" alt="Open in new window" fill />
             </Link>
           </div>
         </div>

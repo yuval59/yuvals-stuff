@@ -1,6 +1,6 @@
 'use client'
 
-import { GitHub, LINKS, LinkedIn, ROUTES } from '@/app'
+import { LINKS, ROUTES } from '@/app'
 import Image from 'next/image'
 import Link from 'next/link'
 import { NavbarProps } from './types'
@@ -20,7 +20,7 @@ export const Navbar = (props: NavbarProps) => (
           <Link href={LINKS.GITHUB} rel="noopener noreferrer" target="_blank">
             <div className="relative w-6 h-6 rounded-xl">
               <Image
-                src={GitHub}
+                src="/github-mark-white.svg"
                 alt="The GitHub logo"
                 sizes="1.5rem"
                 fill
@@ -33,7 +33,7 @@ export const Navbar = (props: NavbarProps) => (
           <Link href={LINKS.LINKEDIN} rel="noopener noreferrer" target="_blank">
             <div className="relative w-6 h-6 rounded-xl">
               <Image
-                src={LinkedIn}
+                src="/LI-In-Bug.png"
                 alt="The LinkedIn logo"
                 sizes="1.5rem"
                 fill
