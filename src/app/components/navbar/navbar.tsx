@@ -1,6 +1,6 @@
 'use client'
 
-import { LINKS, ROUTES } from '@/constants'
+import { LINKS, ROUTES } from '@/app'
 import Image from 'next/image'
 import Link from 'next/link'
 import { NavbarProps } from './types'
@@ -17,11 +17,12 @@ export const Navbar = (props: NavbarProps) => (
     <div className="max-w-screen-xl flex flex-row items-center justify-between mx-auto p-4">
       <ul className={navList}>
         <li>
-          <Link href={LINKS.GITHUB}>
+          <Link href={LINKS.GITHUB} rel="noopener noreferrer" target="_blank">
             <div className="relative w-6 h-6 rounded-xl">
               <Image
                 src="/github-mark-white.svg"
                 alt="The GitHub logo"
+                sizes="1.5rem"
                 fill
               ></Image>
             </div>
@@ -29,9 +30,14 @@ export const Navbar = (props: NavbarProps) => (
         </li>
 
         <li>
-          <Link href={LINKS.LINKEDIN}>
+          <Link href={LINKS.LINKEDIN} rel="noopener noreferrer" target="_blank">
             <div className="relative w-6 h-6 rounded-xl">
-              <Image src="/LI-In-Bug.png" alt="The LinkedIn logo" fill></Image>
+              <Image
+                src="/LI-In-Bug.png"
+                alt="The LinkedIn logo"
+                sizes="1.5rem"
+                fill
+              ></Image>
             </div>
           </Link>
         </li>

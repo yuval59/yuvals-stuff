@@ -1,4 +1,4 @@
-import { Project } from '@/types'
+import { Project } from '@/app'
 
 export type ProjectSelectorButtonProps = {
   params: {
