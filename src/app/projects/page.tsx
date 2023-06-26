@@ -1,5 +1,5 @@
 import { ROUTES } from '@/app'
-import { getProjects } from '@/dal'
+import { getProjects } from '@/app/dal'
 import { Navbar } from '../components'
 import { ProjectsContainer } from './containers'
 
