@@ -13,7 +13,12 @@ const content = (
     A place to link my socials. <br />
     A place to showcase my projects (The ones with a frontend, anyways). <br />
     A justification for me buying this domain. <br />
-    <a href={thisRepo} className="text-blue-500 hover:underline">
+    <a
+      href={thisRepo}
+      className="text-blue-500 hover:underline"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
       Source code
     </a>
   </p>
