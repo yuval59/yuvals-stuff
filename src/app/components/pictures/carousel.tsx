@@ -9,7 +9,7 @@ const PictureCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((index + 1) % images.length)
-    }, 3000)
+    }, 4000)
 
     return () => clearInterval(interval)
   }, [index])
