@@ -43,7 +43,7 @@ const images = [
   />,
   <Image
     key={0}
-    src="/me/IMG_20230215_210519_545.jpg"
+    src="/me/IMG_20230215_210519_545.JPG"
     alt="A picture of Yuval holding his cat (she is very cute)"
     style={{ objectFit: 'contain' }}
     fill
