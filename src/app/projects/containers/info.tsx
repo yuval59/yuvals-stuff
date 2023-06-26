@@ -8,7 +8,7 @@ export const ProjectInfoContainer = (props: ProjectInfoContainerProps) => {
   return (
     <div className="rounded-xl p-4 mb-4 grid grid-rows-2 gap-4">
       <div className="row-span-1 flex flex-row">
-        <p className="rounded-xl p-2 bg-slate-800 text-center text-xl font-semibold w-full">
+        <p className="rounded-xl p-2 bg-slate-800 text-center text-xl text-white font-semibold w-full">
           {project.name}
         </p>
 
@@ -22,7 +22,7 @@ export const ProjectInfoContainer = (props: ProjectInfoContainerProps) => {
       </div>
 
       <div className="rounded-xl p-2 bg-slate-800 row-span-1">
-        <p className="text-md text-center">{project.description}</p>
+        <p className="text-md text-center text-white">{project.description}</p>
       </div>
     </div>
   )
