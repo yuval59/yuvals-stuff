@@ -1,5 +1,4 @@
-import { ROUTES, thisRepo } from '@/constants'
-import '@total-typescript/ts-reset'
+import { ROUTES, thisRepo } from '@/app'
 import { Navbar } from './components'
 
 const header = (

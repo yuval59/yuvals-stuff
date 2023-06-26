@@ -1,6 +1,5 @@
-import { ROUTES } from '@/constants'
-import { Navbar } from '../components'
-import { PictureCarousel } from './pictures'
+import { ROUTES } from '@/app'
+import { Navbar, PictureCarousel } from '../components'
 
 const header = (
   <p className="text-center text-xl font-semibold text-white">About me</p>

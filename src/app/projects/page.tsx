@@ -1,4 +1,4 @@
-import { ROUTES } from '@/constants'
+import { ROUTES } from '@/app'
 import { getProjects } from '@/dal'
 import { Navbar } from '../components'
 import { ProjectsContainer } from './containers'
