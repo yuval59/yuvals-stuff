@@ -1,7 +1,6 @@
 import { ROUTES } from '@/app'
 import { getProjects } from '@/app/dal'
-import { Navbar } from '../components'
-import { ProjectsContainer } from './containers'
+import { Navbar, ProjectsContainer } from '../components'
 
 const ProjectsPage = async () => {
   const projects = await getProjects()
