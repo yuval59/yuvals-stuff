@@ -1,5 +1,5 @@
 import { ROUTES } from '@/app'
-import { getProjects } from '@/app/dal'
+import { getProjects } from '@/dal'
 import { Navbar, ProjectsContainer } from '../components'
 
 const ProjectsPage = async () => {
