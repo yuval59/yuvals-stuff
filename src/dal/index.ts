@@ -1,2 +1,2 @@
 export { getProjects, insertProject } from './dal'
-export type { Project } from './schemas'
+export type { NewProject, Project } from './schemas'

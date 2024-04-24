@@ -1,12 +1,12 @@
 import { ROUTES } from '@/app'
-import { Navbar, PictureCarousel } from '../components'
+import { Navbar, PictureCarousel } from '../../components'
 
 const hackersLink = (
   <a
-    href="https://www.imdb.com/title/tt0113243/"
-    className="text-blue-500 hover:underline"
-    rel="noopener noreferrer"
-    target="_blank"
+    href='https://www.imdb.com/title/tt0113243/'
+    className='text-blue-500 hover:underline'
+    rel='noopener noreferrer'
+    target='_blank'
   >
     {' '}
     hacker movie
@@ -15,10 +15,10 @@ const hackersLink = (
 
 const brainfuckLink = (
   <a
-    href="https://github.com/yuval59/ts-brainf-k"
-    className="text-blue-500 hover:underline"
-    rel="noopener noreferrer"
-    target="_blank"
+    href='https://github.com/yuval59/ts-brainf-k'
+    className='text-blue-500 hover:underline'
+    rel='noopener noreferrer'
+    target='_blank'
   >
     check out my Brainfuck implementation
   </a>
@@ -26,17 +26,17 @@ const brainfuckLink = (
 
 const opensourceLink = (
   <a
-    href="https://github.com/samuelmarina/is-even"
-    className="text-blue-500 hover:underline"
-    rel="noopener noreferrer"
-    target="_blank"
+    href='https://github.com/samuelmarina/is-even'
+    className='text-blue-500 hover:underline'
+    rel='noopener noreferrer'
+    target='_blank'
   >
     is-even
   </a>
 )
 
 const content = (
-  <p className="row-span-3 text-lg text-white">
+  <p className='row-span-3 text-lg text-white'>
     Hi there!
     <br />
     My name is Yuval Maron, and I&apos;m an enthusiastic Fullstack/Backend
@@ -85,13 +85,13 @@ const content = (
 )
 
 const AboutPage = async () => (
-  <div className="container-flex bg-blue-950 h-full min-h-screen overflow-hidden">
+  <div className='container-flex bg-blue-950 h-full min-h-screen overflow-hidden'>
     <Navbar page={ROUTES.ABOUT} />
 
-    <div className="grid grid-cols-4">
+    <div className='grid grid-cols-4'>
       <PictureCarousel />
 
-      <div className="w-full h-full col-span-3 grid grid-rows-4 p-8">
+      <div className='w-full h-full col-span-3 grid grid-rows-4 p-8'>
         {content}
       </div>
     </div>

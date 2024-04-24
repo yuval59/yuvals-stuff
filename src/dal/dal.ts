@@ -1,12 +1,16 @@
 import { env } from '@/env.mjs'
-import { connect } from '@planetscale/database'
-import { drizzle } from 'drizzle-orm/planetscale-serverless'
+import { drizzle } from 'drizzle-orm/mysql2'
+import mysql from 'mysql2/promise'
 import { NewProject, Project, projects } from './schemas'
 
-const connection = connect({
+const connection = mysql.createPool({
   host: env.DB_HOST,
-  username: env.DB_USER,
+  port: env.DB_PORT,
+
+  user: env.DB_USER,
   password: env.DB_PASS,
+
+  database: env.DB_DB,
 })
 
 const db = drizzle(connection)
