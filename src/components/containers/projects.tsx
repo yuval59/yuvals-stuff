@@ -22,18 +22,19 @@ export const ProjectsContainer = (props: ProjectContainerProps) => {
 
   return (
     <div>
-      <div className="rounded-xl p-8 m-8 justify-around flex bg-slate-900">
+      <div className='rounded-xl p-8 m-8 justify-around flex bg-slate-900'>
         {selectorButtons}
       </div>
-
-      <div className="rounded-xl p-8 m-8 bg-slate-900">
-        <ProjectInfoContainer project={selected} />
+      (
+      <div className='rounded-xl p-8 m-8 bg-slate-900'>
+        {!selected || <ProjectInfoContainer project={selected} />}
 
         <iframe
-          src={selected.host}
-          className="rounded-xl w-full h-full min-h-[45vh]"
+          src={selected?.host}
+          className='rounded-xl w-full h-full min-h-[45vh]'
         />
       </div>
+      )
     </div>
   )
 }

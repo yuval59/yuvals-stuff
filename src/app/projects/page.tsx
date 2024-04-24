@@ -1,13 +1,12 @@
 import { ROUTES } from '@/app'
-import { getProjects } from '@/app/dal'
-import { Navbar } from '../components'
-import { ProjectsContainer } from './containers'
+import { Navbar, ProjectsContainer } from '@/components'
+import { getProjects } from '@/dal'
 
 const ProjectsPage = async () => {
   const projects = await getProjects()
 
   return (
-    <div className="container-flex bg-blue-950 h-full min-h-screen overflow-hidden">
+    <div className='container-flex bg-blue-950 h-full min-h-screen overflow-hidden'>
       <Navbar page={ROUTES.PROJECTS} />
 
       <ProjectsContainer projects={projects} />
