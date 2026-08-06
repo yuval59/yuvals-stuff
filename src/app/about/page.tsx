@@ -35,24 +35,49 @@ const opensourceLink = (
   </a>
 )
 
+const link = (href: string, text: string) => (
+  <a
+    href={href}
+    className='text-blue-500 hover:underline'
+    rel='noopener noreferrer'
+    target='_blank'
+  >
+    {text}
+  </a>
+)
+
+const bunLink = link('https://github.com/oven-sh/bun', 'Bun')
+const drizzleLink = link(
+  'https://github.com/drizzle-team/drizzle-orm',
+  'Drizzle ORM'
+)
+const redisLink = link('https://github.com/redis/redis', 'Redis')
+const whatsappLink = link(
+  'https://github.com/pedroslopez/whatsapp-web.js',
+  'whatsapp-web.js'
+)
+
 const content = (
   <p className='row-span-3 text-lg text-white'>
     Hi there!
     <br />
-    My name is Yuval Maron, and I&apos;m an enthusiastic Fullstack/Backend
-    developer, experienced with many technologies.
+    My name is Yuval Maron, and I&apos;m a Senior Backend Engineer with over 7
+    years of experience building scalable, reliable systems from concept to
+    deployment.
     <br />
-    I&apos;m 23, and have been programming professionally for about 4 years now.
+    Most recently I spent a year and a half at Airobotics, where I architected a
+    Command and Control system from the ground up, built a Built-In Test
+    framework for health monitoring and fault detection, and set up the CI/CD
+    pipeline that automated build, test and deployment.
     <br />
-    I&apos;ve worked with both Angular and React (with the pages model and the
-    newer app router model), mainly using Next. On the backend I&apos;ve used
-    NodeJS almost exclusively utilizing TypeScript, using a variety of databases
-    - MySQL, MongoDB, PostgreSQL, etc.
+    Before that I spent nearly four years at Multix as a fullstack developer,
+    integrating enterprise APIs for telecom providers like Yes, Cellcom and HOT,
+    leading projects from conception to delivery, and keeping high-availability
+    production systems healthy.
     <br />
-    I have experience deploying to AWS and Microsoft&apos;s Azure, though most
-    recently I&apos;ve worked with Google&apos;s &quot;Cloud services&quot;.
-    <br />
-    Familiar with Docker and K8s.
+    These days I write mostly TypeScript, Python and SQL - React and Angular on
+    the frontend, NodeJS and GraphQL on the backend, with AWS, Docker, Git and a
+    CI/CD pipeline holding it together. Databases are usually MongoDB or SQL.
     <br />
     <br />
     I&apos;d started learning how to code at the age of 10, following a
@@ -61,8 +86,10 @@ const content = (
     <br />
     The first language I learned was C#, and later Python.
     <br />
-    When I finished high-school I started working with a company based in the
-    U.S making video games - I was doing rendering optimization using C++.
+    When I finished high-school I started working at SculptrVR, a company based
+    in the U.S making video games - I was optimizing their voxel engine in
+    Unreal Engine 4 and C++, which ended up winning more than 30% in frame-rates
+    across platforms.
     <br />
     After that, I&apos;d briefly worked at Yes, and then started doing fullstack
     work in Nahariyya, which is when I learned JS and fell in love with the
@@ -70,10 +97,13 @@ const content = (
     <br />
     <br />
     In my free time I like to program passion projects ({brainfuckLink}) and
-    contributing to open-source projects (
-    {'check out the best open-source project, '}
+    contribute to open-source ones - a crash in {bunLink} when reading very
+    large files, the nested-object typing in {drizzleLink} (which prompted a
+    TypeScript bugfix of its own), a {redisLink} bug where SETUSER did not
+    revert to true defaults, and a few Puppeteer crashes in {whatsappLink}.
+    <br />
+    {'Also, obviously, the best open-source project there is, '}
     {opensourceLink}
-    )
     <br />
     Sometimes I climb, sometimes I play video games, I love reading and I just
     cannot get enough of learning - anything at all
