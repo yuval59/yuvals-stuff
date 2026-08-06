@@ -1,4 +1,6 @@
 export { ProjectSelectorButton } from './buttons'
 export { ProjectsContainer } from './containers'
+export { HeightmapBackground, HeightmapCanvas } from './heightmap'
+export { HideableText } from './hideable'
 export { Navbar } from './navbar'
 export { PictureCarousel } from './pictures'

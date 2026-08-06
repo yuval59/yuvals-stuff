@@ -1,5 +1,5 @@
 import { ROUTES } from '@/app'
-import { Navbar, PictureCarousel } from '../../components'
+import { Navbar, PictureCarousel } from '@/components'
 
 const hackersLink = (
   <a
