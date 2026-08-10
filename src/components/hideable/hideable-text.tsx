@@ -27,7 +27,7 @@ export const HideableText = ({ children }: HideableTextProps) => {
             {shown && (
                 <div
                     id='home-text'
-                    className='grid grid-rows-4 p-8 m-8 rounded-xl bg-black/60'
+                    className='grid grid-rows-4 p-8 m-8 rounded-xl bg-black/80'
                 >
                     {children}
                 </div>
